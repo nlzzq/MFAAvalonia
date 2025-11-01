@@ -1,0 +1,24 @@
+{
+    "刷mod": {
+        
+        "recognition": "OCR",          // 文字识别引擎
+        "expected": "再次",            // 目标文本
+        "action": "Click",      // 执行点击操作
+        "next": ["开始挑战"]        // 后续任务链
+        // "recognition": "TemplateMatch",// 图像模板匹配
+        // "template": "zaicijinxing.png",        // 匹配素材路径
+        // "action": "Click"
+    },
+    "开始挑战": {
+        "recognition": "OCR",
+        "expected": "开始",
+        "action": "Click",
+        "next": ["刷mod"]        // 后续任务链
+    },
+    "MyTask4": {
+        "recognition": "Custom",
+        "custom_recognition": "my_reco_222",
+        "action": "Custom",
+        "custom_action": "my_action_111"
+    }
+}
